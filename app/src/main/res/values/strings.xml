@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CSCI3130</string>
+    <string name="validate">VALIDATE</string>
+    <string name="password">Enter password</string>
+</resources>
