@@ -23,7 +23,19 @@ public class Validator {
 
             passedRules += 1;
         }
-       
+        // rule-3: at least has one digit.
+        if(s.matches(".*[0-9]+.*")){
+            passedRules += 1;
+        }
+        // rule-4: has both upper and lower case.
+        if(s.matches(".*[a-z]+.*") && s.matches(".*[A-Z]+.*")){
+            passedRules += 1;
+        }
+        // rule-5: first letter has to be letter, and is not upper case.
+       if(s.substring(0,1).matches(".*[a-z]+.*")){
+           passedRules += 1;
+
+       }
         return passedRules;
     }
 }
